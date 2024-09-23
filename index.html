@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
         <!-- NavBar Start -->
         <nav class="flex justify-between items-center px-20 py-6 relative bg-[#F9F7F3]">
             <div>
-                <button class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Blog</button>
+                <button id="blog" class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Blog</button>
             </div>
             <div class="flex items-center justify-center ">
                 <img src="./assets/logo.png" alt="logo">
@@ -55,12 +55,12 @@
         <!-- NavBar End -->
         <!-- Button Part Start -->
         <div class="flex justify-center gap-3 mt-5 mb-5">
-            <div>
-                <button id="donate" class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Donation</button>
-            </div>
-            <div>
-                <button id="history" class="btn bg-none">History</button>
-            </div>
+          <div>
+            <button id="donate" class="bg-primary p-[12px_32px_12px_32px] rounded-lg text-dark-01 font-semibold">Donation</button>
+          </div>
+          <div>
+            <button id="history" class="border-2 border-solid border-dark-03 p-[10px_30px_10px_30px] rounded-lg text-dark-02 font-semibold">History</button>
+          </div>
         </div>
         <!-- Button Part End -->
     </header>
@@ -121,14 +121,14 @@
 
         <dialog id="my_modal_1" class="modal">
             <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
-              <h3 class="text-dark-01 text-5xl font-bold text-center">Congratulations</h3>
+              <h3 class="text-black text-5xl font-bold text-center">Congratulations</h3>
               <div class="mt-4">
                 <img class="w-12 h-12" src="assets/coin.png" />
               </div>
               <div class="text-center mt-4">
-                <p class="font-bold text-dark-02 text-center">You have donate form humankind</p>
+                <p class="font-bold text-gray-600 text-center">You have donate form humankind</p>
               </div>
-              <p class="text-dark-01 text-3xl font-bold text-center mt-4">successfully</p>
+              <p class="text-black text-3xl font-bold text-center mt-4">successfully</p>
               <button id="btn-continue" class="btn mt-4 bg-button px-16 btn-md hover:bg-black transition-colors ease-in duration-300 text-black hover:text-white">Close Confirmation</button>
             </form>
           </dialog>
