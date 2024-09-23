@@ -1,3 +1,4 @@
+// Input Value
 function inputValue(id) {
     const values = document.getElementById(id).value;
     const number = parseFloat(values);
@@ -61,12 +62,13 @@ const historyBtn = document.getElementById("history");
 const donateAllEl = document.getElementById("donate-fields");
 const historyAllEl = document.getElementById("history-fields");
 
+// Donation Btn Function
 donateBtn.addEventListener("click", function () {
   donateBtn.classList.add("bg-primary",  "text-black");
 
   donateBtn.classList.remove("border-2", "border-solid", "text-gray-600");
 
-  historyBtn.classList.add("border-2", "border-solid",  "text-gray-600");
+  historyBtn.classList.add("border-2", "border-solid","text-gray-600");
 
   historyBtn.classList.remove("bg-primary",  "text-black");
 
@@ -74,13 +76,13 @@ donateBtn.addEventListener("click", function () {
 
   historyAllEl.classList.add("hidden");
 });
-
+// History Button Function
 historyBtn.addEventListener("click", function () {
   donateBtn.classList.remove("bg-primary", "text-black");
 
-  donateBtn.classList.add("border-2", "border-solid", "border-dark-03",  "text-gray-600");
+  donateBtn.classList.add("border-2", "border-solid", "text-gray-600");
 
-  historyBtn.classList.remove("border-2", "border-solid", "border-dark-03",  "text-gray-600");
+  historyBtn.classList.remove("border-2", "border-solid", "text-gray-600");
 
   historyBtn.classList.add("bg-primary",  "text-black");
 
@@ -90,7 +92,7 @@ historyBtn.addEventListener("click", function () {
 });
 
 
-// done donate for noakhali
+// Noakhali Donate done 
 document.getElementById("btn-noakhali").addEventListener("click", function (event) {
   event.preventDefault;
 
@@ -99,7 +101,7 @@ document.getElementById("btn-noakhali").addEventListener("click", function (even
   document.getElementById("input-noakhali").value = "";
 });
 
-// done donate for feni
+// Feni Donate done 
 document.getElementById("btn-feni").addEventListener("click", function (event) {
   event.preventDefault;
 
@@ -108,7 +110,7 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
   document.getElementById("input-fani").value = "";
 });
 
-// done donate for Quota Movement
+// Quota Movement donate done
 document.getElementById("btn-quota").addEventListener("click", function (event) {
   event.preventDefault;
 
