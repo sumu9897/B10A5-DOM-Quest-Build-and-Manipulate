@@ -124,6 +124,6 @@ document.getElementById("btn-quota").addEventListener("click", function (event) 
 const blogBtn = document.getElementById("blog");
 
 blogBtn.addEventListener('click',function(){
-  window.location.href = '../blog.html'
+  window.location.href = `B10A5-DOM-Quest-Build-and-Manipulate/../blog.html`
 });
 
