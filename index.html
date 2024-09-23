@@ -17,11 +17,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- customize tailwind -->
     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary : '#B4F461',
+                    },
+                    fontFamily : {
+                        Lexend :'Lexend', 
+                    },
+                },
+            },
 
+        }
     </script>
 
 </head>
-<body>
+<body class="font-Lexend mx-auto scroll-smooth">
+    <!-- Header Part Start -->
+    <header>
+        <nav class="flex justify-between items-center px-20 py-3 relative bg-[#F9F7F3]">
+            <div>
+                <button class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Blog</button>
+            </div>
+            <div class="flex items-center justify-center ">
+                <img src="./assets/logo.png" alt="logo">
+                <h3>Donate Bangladesh</h3>
+            </div>
+            <div class="flex items-center justify-center ">
+                <img src="./assets/coin.png" alt="coin">
+                &nbsp;
+                <h4>5900</h4>
+                <h4>&nbsp;BDT</h4>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Part End -->
+
     
 </body>
 </html>
