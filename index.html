@@ -35,8 +35,9 @@
 </head>
 <body class="font-Lexend mx-auto scroll-smooth">
     <!-- Header Part Start -->
-    <header>
-        <nav class="flex justify-between items-center px-20 py-3 relative bg-[#F9F7F3]">
+    <header class="sticky">
+        <!-- NavBar Start -->
+        <nav class="flex justify-between items-center px-20 py-6 relative bg-[#F9F7F3]">
             <div>
                 <button class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Blog</button>
             </div>
@@ -51,9 +52,20 @@
                 <h4>&nbsp;BDT</h4>
             </div>
         </nav>
+        <!-- NavBar End -->
+        <!-- Button Part Start -->
+        <div class="flex justify-center gap-3 mt-10">
+            <div>
+                <button id="donate" class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Donation</button>
+            </div>
+            <div>
+                <button id="history" class="btn bg-none">History</button>
+            </div>
+        </div>
+        <!-- Button Part End -->
     </header>
     <!-- Header Part End -->
 
-    
+    <script src="./js/index.js"></script>
 </body>
 </html>
