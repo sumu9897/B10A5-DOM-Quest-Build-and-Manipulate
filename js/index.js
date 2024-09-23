@@ -3,7 +3,7 @@ function inputValue(id) {
     const values = document.getElementById(id).value;
     const number = parseFloat(values);
     if (isNaN(number) || number <= 0) {
-      alert("⚠️ Please enter a valid donation amount.");
+      alert("⚠️ Please enter a valid amount.");
       return null;
     } else {
       return number;
