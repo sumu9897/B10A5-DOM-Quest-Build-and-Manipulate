@@ -35,7 +35,7 @@
 </head>
 <body class="font-Lexend mx-auto scroll-smooth">
     <!-- Header Section Start -->
-    <header class="sticky">
+    <header class="sticky top-0 bg-white pb-1">
         <!-- NavBar Start -->
         <nav class="flex justify-between items-center px-20 py-6 relative bg-[#F9F7F3]">
             <div>
@@ -48,13 +48,13 @@
             <div class="flex items-center justify-center ">
                 <img src="./assets/coin.png" alt="coin">
                 &nbsp;
-                <h4>5900</h4>
+                <h4 id="balance">5900</h4>
                 <h4>&nbsp;BDT</h4>
             </div>
         </nav>
         <!-- NavBar End -->
         <!-- Button Part Start -->
-        <div class="flex justify-center gap-3 mt-10 mb-5">
+        <div class="flex justify-center gap-3 mt-5 mb-5">
             <div>
                 <button id="donate" class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Donation</button>
             </div>
@@ -66,7 +66,7 @@
     </header>
     <!-- Header Section End -->
     <!-- Main Section Start -->
-    <main id="donate-items" class="lg:px-32 py-6 sm:px-5 flex flex-col gap-7">
+    <main id="donate-fields" class="lg:px-32 py-6 sm:px-5 flex flex-col gap-7">
         <!-- Card 1 -->
         <div class="flex flex-col lg:flex-row gap-5 p-3 border-gray-200 border-2 rounded-2xl">
             <div class="flex-1">
@@ -118,8 +118,27 @@
                 <button id="btn-quota" class="btn btn-outline w-full bg-primary border-none text-black font-semibold text-xl">Donate Now</button>
               </div>
         </div>
+
+        <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+              <h3 class="text-dark-01 text-5xl font-bold text-center">Congratulations</h3>
+              <div class="mt-4">
+                <img class="w-12 h-12" src="assets/coin.png" />
+              </div>
+              <div class="text-center mt-4">
+                <p class="font-bold text-dark-02 text-center">You have donate form humankind</p>
+              </div>
+              <p class="text-dark-01 text-3xl font-bold text-center mt-4">successfully</p>
+              <button id="btn-continue" class="btn mt-4 bg-button px-16 btn-md hover:bg-black transition-colors ease-in duration-300 text-black hover:text-white">Close Confirmation</button>
+            </form>
+          </dialog>
     </main>
     <!-- Main Section End -->
+    <!-- History Section Start -->
+    <div id="history-fields" class="hidden">
+
+    </div>
+    <!-- History Section End-->
 
     <script src="./js/index.js"></script>
 </body>
