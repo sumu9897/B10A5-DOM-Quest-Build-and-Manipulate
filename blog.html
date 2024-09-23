@@ -43,12 +43,12 @@
             </div>
             <div class="flex items-center justify-center ">
                 <img src="./assets/logo.png" alt="logo">
-                <h3>Donate Bangladesh</h3>
+                <h3 class="text-md font-bold">&nbsp;&nbsp;Donate Bangladesh</h3>
             </div>
             <div class="flex items-center justify-center ">
                 <img src="./assets/coin.png" alt="coin">
                 &nbsp;
-                <h4 id="balance">5900</h4>
+                <h4 id="balance">5900.00</h4>
                 <h4>&nbsp;BDT</h4>
             </div>
         </nav>
@@ -63,46 +63,52 @@
     
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="answer" checked="checked" />
-            <div class="collapse-title text-dark-01 text-xl font-bold">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-title text-black text-xl font-bold">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-              <p class="text-dark-02 font-medium">
-                The Document Object Model (DOM) is a programming interface that represents an HTML or XML document as a structured tree of objects. It allows scripts, like JavaScript, to dynamically
-                access and manipulate the content, structure, and style of a webpage, enabling interactive and dynamic web applications.
+              <p class="text-gray-600 font-medium">
+                A structure that shows an HTML or XML content as a tree of objects is called the content Object Model (DOM). It makes webpage content, layout, and style modifiable and interactable with JavaScript.
               </p>
             </div>
           </div>
     
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="answer" />
-            <div class="collapse-title text-dark-01 text-xl font-bold">How do you selected an element form the DOM?</div>
+            <div class="collapse-title text-black text-xl font-bold">How do you selected an element form the DOM?</div>
             <div class="collapse-content">
-              <p class="text-dark-02 font-medium">
-                To select an element from the DOM, you can use methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll(). These methods allow
-                you to target specific elements by their ID, class, tag name, or CSS selectors for further manipulation or styling.
+              <p class="text-gray-600 font-medium">
+                Use techniques like `getElementById('id') for ID selection, `getElementsByClassName('class')` for class selection, `querySelector('selector') for the first CSS selector match, or `querySelectorAll('selector') for all matching elements when choosing an element from the DOM.
+
               </p>
             </div>
           </div>
     
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="answer" />
-            <div class="collapse-title text-dark-01 text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-title text-black text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-              <p class="text-dark-02 font-medium">
-                Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events triggered by its child elements. Instead of attaching individual
-                event listeners to each child element, you attach one listener to the parent, and when an event happens on any child, it "bubbles" up to the parent. The parent can then detect which child
-                triggered the event using the event.target property.
+              <p class="text-gray-600 font-medium">
+                Adding a single event listener to a parent element in the DOM is known as event delegation, as opposed to adding it to each child element. A youngster experiences something, and it "bubbles up" to the parent so they can deal with it. This is helpful since it reduces memory use and improves the efficiency of your code, particularly when handling large numbers of child items or dynamically introduced elements.
               </p>
             </div>
           </div>
     
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="answer" />
-            <div class="collapse-title text-dark-01 text-xl font-bold">How do you manipulate an element`s attributes and styles using the DOM?</div>
+            <div class="collapse-title text-black text-xl font-bold">How do you manipulate an element`s attributes and styles using the DOM?</div>
             <div class="collapse-content">
-              <p class="text-dark-02 font-medium">
-                You can manipulate an element's attributes and styles using JavaScript in the DOM by employing methods like setAttribute(), getAttribute(), and removeAttribute() for attributes, and the
-                style property or classList for styles. This allows for dynamic updates to elements, enhancing interactivity and user experience.
+              <p class="text-gray-600 font-medium">
+                To manipulate an element's attributes and styles in the DOM:
               </p>
+              <ul>
+                <li class="text-gray-600 font-medium">
+                    <span class="font-bold">Attributes:</span>
+                    Attributes: Use element.setAttribute('attr', 'value') to set an attribute, element.getAttribute('attr') to get its value, and element.removeAttribute('attr') to remove it.
+                </li>
+                <li class="text-gray-600 font-medium">
+                    <span class="font-bold">Styles:</span>
+                     Modify styles directly with element.style.property = 'value' (e.g., element.style.color = 'red'), or add/remove classes with `element
+                </li>
+              </ul>
             </div>
           </div>
 
