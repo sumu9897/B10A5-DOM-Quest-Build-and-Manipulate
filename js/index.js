@@ -46,7 +46,7 @@ function inputValue(id) {
       <h2 class="text-black text-xl font-bold">${inputNum} Taka is Donated for ${location}</h2>
       <p class="text-gray-600 font-medium">Date : ${time}</p>
       `;
-    const historyContainer = document.getElementById("history-container");
+    const historyContainer = document.getElementById("history-fields");
   
     if (historyContainer.firstChild) {
       historyContainer.insertBefore(div, historyContainer.firstChild);
